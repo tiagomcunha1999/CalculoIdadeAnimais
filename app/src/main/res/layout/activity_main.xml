@@ -43,6 +43,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editIdade"
             android:layout_width="360dp"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
@@ -56,18 +57,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:onClick="calcularIdade"
         android:text="Calcular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/Resultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="53dp"
-        android:text="RESULTADO"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:text="Resulatado" />
 </androidx.constraintlayout.widget.ConstraintLayout>
